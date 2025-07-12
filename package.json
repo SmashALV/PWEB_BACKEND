@@ -2,9 +2,11 @@
   "name": "backend-1",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {             
-  "test": "echo \"Tests skipped\" && exit 0" 
-  },
+  "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js", 
+  "test": "echo \"Tests skipped\" && exit 0"
+},
   "author": "",
   "license": "ISC",
   "type": "module",
