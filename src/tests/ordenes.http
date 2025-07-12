@@ -1,0 +1,28 @@
+### HTTP Test for Ordenes CRUD
+
+# Get all orders
+GET http://localhost:3000/api/ordenes
+Accept: application/json
+
+###
+# Get order by ID
+GET http://localhost:3000/api/ordenes/1
+Accept: application/json
+
+###
+# Create new order
+POST http://localhost:3000/api/ordenes
+Content-Type: application/json
+
+{
+  "usuario_id": 1,
+  "detalles": [
+    { "producto_id": 1, "cantidad": 2 },
+    { "producto_id": 2, "cantidad": 1 }
+  ]
+}
+
+###
+# Delete order
+DELETE http://localhost:3000/api/ordenes/1
+Accept: application/json

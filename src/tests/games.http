@@ -1,0 +1,65 @@
+GET http://localhost:3001/games
+
+####
+GET http://localhost:3001/games/1
+
+###
+DELETE http://localhost:3001/games/3
+
+###
+POST http://localhost:3001/games/
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Microsoft Flight Simulator 2024",
+  "precio": 250,
+  "precioConDescuento": 200,
+  "porcentajeDescuento": 20,
+  "publisher": "Xbox Game Studios",
+  "genero": "Simulación",
+  "caracteristicas": "Optimizado para Xbox Series X, Xbox Play Anywhere, 15 funcionalidades de accesibilidad,14 idiomas permitidos",
+  "descripcion": "Standard Edition Explora el mundo con nuestra flota más grande de aviones y lleva la simulación a otras alturas mientras persigues tu carrera en la aviación dentro de Microsoft Flight Simulator 2024. Standard Edition incluye más de 65 aeronaves y 150 aeropuertos hechos a mano.",
+  "jugarCon": "PC,Xbox Series X/S",
+  "funcionalidades": "4K Ultra HD, HDR10",
+  "img": "https://store-images.s-microsoft.com/image/apps.17285.14546949033229931.f4e841b6-7779-427d-8821-1b81b953e7fb.948eab19-e79f-4f0f-901d-6677c39b100d?q=90&w=177&h=265",
+  "imgThumb": "https://store-images.s-microsoft.com/image/apps.18268.14546949033229931.f4e841b6-7779-427d-8821-1b81b953e7fb.efd058cc-a6f4-45ee-b327-be6a882d379c?q=90&w=177&h=177"
+}
+
+###
+PUT http://localhost:3001/games/
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Microsoft Flight Simulator 2024 (Standard Edition)",
+  "precio": 250,
+  "precioConDescuento": 200,
+  "porcentajeDescuento": 20,
+  "publisher": "Xbox Game Studios",
+  "genero": "Simulación",
+  "caracteristicas": [
+    "Optimizado para Xbox Series X",
+    "Xbox Play Anywhere",
+    "15 funcionalidades de accesibilidad",
+    "14 idiomas permitidos"
+  ],
+  "descripcion": "Standard Edition Explora el mundo con nuestra flota más grande de aviones y lleva la simulación a otras alturas mientras persigues tu carrera en la aviación dentro de Microsoft Flight Simulator 2024. Standard Edition incluye más de 65 aeronaves y 150 aeropuertos hechos a mano.",
+  "jugarCon": [
+    "PC",
+    "Xbox Series X/S"
+  ],
+  "funcionalidades": [
+    "4K Ultra HD",
+    "HDR10",
+    "Single Player",
+    "Frecuencia de Actualización Variable",
+    "Ray Traycing",
+    "60 fps+",
+    "Dolby Atmos",
+    "Xbox PlayAnywhere"
+  ],
+  "img": "https://store-images.s-microsoft.com/image/apps.17285.14546949033229931.f4e841b6-7779-427d-8821-1b81b953e7fb.948eab19-e79f-4f0f-901d-6677c39b100d?q=90&w=177&h=265",
+  "imgThumb": "https://store-images.s-microsoft.com/image/apps.18268.14546949033229931.f4e841b6-7779-427d-8821-1b81b953e7fb.efd058cc-a6f4-45ee-b327-be6a882d379c?q=90&w=177&h=177"
+}
+

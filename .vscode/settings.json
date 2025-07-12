@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3cc97074-916f-4b24-b0b9-153a17c000a5/resourceGroups/appsvc_linux_eastus/providers/Microsoft.Web/sites/prograweb-2025-1-as-back",
+    "appService.deploySubpath": "."
+}

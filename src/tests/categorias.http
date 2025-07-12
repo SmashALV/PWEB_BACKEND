@@ -1,0 +1,26 @@
+### Obtener todas las categorías
+GET http://localhost:3001/categorias
+
+### Obtener una categoría por ID
+GET http://localhost:3001/categorias/1
+
+### Crear una nueva categoría
+POST http://localhost:3001/categorias
+Content-Type: application/json
+
+{
+  "nombre": "Frutas y Verduras",
+  "descripcion": "Productos frescos y saludables, ideales para una alimentación balanceada."
+}
+
+### Actualizar una categoría
+PUT http://localhost:3001/categorias/1
+Content-Type: application/json
+
+{
+  "nombre": "Frutas y Verduras",
+  "descripcion": "Productos frescos, saludables y deliciosos."
+}
+
+### Eliminar una categoría
+DELETE http://localhost:3001/categorias/1

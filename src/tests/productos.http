@@ -1,0 +1,38 @@
+### HTTP Test for Productos CRUD
+
+# Get all products
+GET http://localhost:3000/api/productos
+Accept: application/json
+
+###
+# Get product by ID
+GET http://localhost:3000/api/productos/1
+Accept: application/json
+
+###
+# Create new product
+POST http://localhost:3000/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Manzana",
+  "precio": 1.5,
+  "categoria": 2
+}
+
+###
+# Update product
+PUT http://localhost:3000/api/productos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "Manzana Roja",
+  "precio": 1.7,
+  "categoria": 2
+}
+
+###
+# Delete product
+DELETE http://localhost:3000/api/productos/1
+Accept: application/json
