@@ -15,7 +15,7 @@ async function main () {
         const PORT = process.env.PORT || 3001;
 
         app.listen(PORT, () => {
-        console.log('El servidor está ejecutándose en el puerto 3001')
+        console.log('El servidor está ejecutándose en el puerto ${PORT}')
 })
 
     } catch (error) {
