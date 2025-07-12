@@ -1,4 +1,3 @@
-
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/database.js';
 
@@ -13,6 +12,10 @@ const Categoria = sequelize.define('Categoria', {
     allowNull: false
   },
   descripcion: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+  img: { 
     type: DataTypes.STRING,
     allowNull: true
   }
